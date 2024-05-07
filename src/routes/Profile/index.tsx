@@ -21,6 +21,7 @@ import { getUserData, updateUserList } from "../../scripts/user";
 import { useEffect } from "react";
 import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import InputMask from "react-input-mask";
 
 export type ProfileProps = {
   name: string;
@@ -150,7 +151,12 @@ export default function Home() {
                 {({ field, form }: FieldProps<"phone", ProfileProps>) => (
                   <FormControl isInvalid={Boolean(form.errors.phone)}>
                     <FormLabel>Telefone:</FormLabel>
-                    <Input {...field} />
+                    <Input
+                      as={InputMask}
+                      mask="(99) 99999-9999"
+                      maskChar={null}
+                      {...field}
+                    />
                     <FormErrorMessage>{form.errors.phone}</FormErrorMessage>
                   </FormControl>
                 )}
