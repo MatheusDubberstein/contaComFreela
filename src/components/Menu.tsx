@@ -4,7 +4,7 @@ import { PiSignIn } from "react-icons/pi";
 import { checkAuth, getUser } from "../scripts/auth";
 import { useState } from "react";
 import { getUserData } from "../scripts/user";
-
+import logoImage from "../assets/logo.svg";
 function getSelectedRouteColor(selected: boolean) {
   return selected
     ? { color: "#1C1C1C", weight: "700" }
@@ -22,7 +22,7 @@ export default function Menu() {
       height="60px"
       justifyContent="space-between"
     >
-      <Image src="./src/assets/logo.svg" h="42px" />
+      <Image src={logoImage} h="42px" />
       <Flex gap="48px">
         <Link
           as={RouterLink}
