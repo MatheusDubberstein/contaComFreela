@@ -8,6 +8,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
+import digitalPlataform from "../../assets/digitalPlataform.png";
+import interation from "../../assets/interation.png";
+import flexibleTime from "../../assets/flexibleTime.png";
 export default function Qualification() {
   return (
     <VStack>
@@ -33,11 +36,7 @@ export default function Qualification() {
             justifyContent="center"
             h="100%"
           >
-            <Image
-              src="./src/assets/digitalPlataform.png"
-              h="100px"
-              w="100px"
-            />
+            <Image src={digitalPlataform} h="100px" w="100px" />
             <Heading fontSize="22px" color="#1c1c1c">
               Plataforma Digital
             </Heading>
@@ -54,7 +53,7 @@ export default function Qualification() {
             justifyContent="center"
             h="100%"
           >
-            <Image src="./src/assets/interation.png" h="100px" w="100px" />
+            <Image src={interation} h="100px" w="100px" />
             <Heading fontSize="22px" color="#1c1c1c">
               Interação Efetiva
             </Heading>
@@ -70,7 +69,7 @@ export default function Qualification() {
             justifyContent="center"
             h="100%"
           >
-            <Image src="./src/assets/flexibleTime.png" h="100px" w="100px" />
+            <Image src={flexibleTime} h="100px" w="100px" />
             <Heading fontSize="22px" color="#1c1c1c">
               Tempo Flexivel
             </Heading>
