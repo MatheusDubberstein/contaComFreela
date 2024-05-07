@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import googleImage from "../../assets/google.png";
+import backgorund from "../../assets/background.png";
+import women from "../../assets/women.png";
 import {
   Button,
   Input,
@@ -139,7 +142,7 @@ export default function SignUp() {
             justifyContent="center"
           >
             <Image
-              src="./src/assets/background.png"
+              src={backgorund}
               opacity="4%"
               pos="absolute"
               zIndex="0"
@@ -170,12 +173,7 @@ export default function SignUp() {
                 bottom="90px"
                 borderRadius="100%"
               ></Box>
-              <Image
-                src="./src/assets/women.png"
-                pos="absolute"
-                right="-38px"
-                bottom="0"
-              />
+              <Image src={women} pos="absolute" right="-38px" bottom="0" />
             </Box>
           </Flex>
         </GridItem>
@@ -415,7 +413,7 @@ export default function SignUp() {
                 bg="transparent"
                 onClick={signInWithGoogle}
               >
-                <Image src="./src/assets/google.png" mr="10px" />
+                <Image src={googleImage} mr="10px" />
                 <Text fontWeight="300">
                   Criar com o <Text as="b">google</Text>
                 </Text>

@@ -1,4 +1,10 @@
 import Menu from "../../components/Menu";
+import backgroundUrl from "../../assets/background.png";
+import guy from "../../assets/guy.png";
+import waveWelcome from "../../assets/waveWelcome.svg";
+import play from "../../assets/play.svg";
+import pin from "../../assets/pin.svg";
+import pin2 from "../../assets/pin2.svg";
 import {
   Box,
   Button,
@@ -85,21 +91,21 @@ export default function Welcome() {
                   gap="8px"
                   fontWeight="700"
                 >
-                  <Image src="./src/assets/play.svg" /> Como que funciona?
+                  <Image src={play} /> Como que funciona?
                 </Flex>
               </Link>
             </Flex>
           </Flex>
 
           <Image
-            src="./src/assets/waveWelcome.svg"
+            src={waveWelcome}
             pos="absolute"
             zIndex={0}
             h="554px"
             right="290px"
           />
           <Image
-            src="./src/assets/guy.png"
+            src={guy}
             pos="absolute"
             zIndex={0}
             right="320px"
@@ -107,7 +113,7 @@ export default function Welcome() {
             width="300px"
           />
           <Image
-            src="./src/assets/pin.svg"
+            src={pin}
             pos="absolute"
             zIndex={0}
             left="-75px"
@@ -115,7 +121,7 @@ export default function Welcome() {
             w="140px"
           />
           <Image
-            src="./src/assets/pin2.svg"
+            src={pin2}
             pos="absolute"
             zIndex={0}
             bottom="50px"
@@ -132,7 +138,7 @@ export default function Welcome() {
           justifyContent="center"
         >
           <Image
-            src="./src/assets/background.png"
+            src={backgroundUrl}
             opacity="4%"
             pos="absolute"
             height="162px"

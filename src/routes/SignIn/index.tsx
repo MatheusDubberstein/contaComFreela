@@ -30,6 +30,10 @@ import { app } from "../../main";
 import { ProfileProps } from "../Profile";
 import { getUserList, updateUserList } from "../../scripts/user";
 import { useEffect } from "react";
+import googleImage from "../../assets/google.png";
+import backgorund from "../../assets/background.png";
+import women from "../../assets/women.png";
+
 type FormProps = {
   email: string;
   password: string;
@@ -272,7 +276,7 @@ export default function SignIn() {
               bg="transparent"
               onClick={signInWithGoogle}
             >
-              <Image src="./src/assets/google.png" mr="10px" />
+              <Image src={googleImage} mr="10px" />
               <Text fontWeight="300">
                 Entrar com o <Text as="b">google</Text>
               </Text>
@@ -290,7 +294,7 @@ export default function SignIn() {
           justifyContent="center"
         >
           <Image
-            src="./src/assets/background.png"
+            src={backgorund}
             opacity="4%"
             pos="absolute"
             zIndex="0"
@@ -321,12 +325,7 @@ export default function SignIn() {
               bottom="90px"
               borderRadius="100%"
             ></Box>
-            <Image
-              src="./src/assets/women.png"
-              pos="absolute"
-              right="-38px"
-              bottom="0"
-            />
+            <Image src={women} pos="absolute" right="-38px" bottom="0" />
           </Box>
         </Flex>
       </GridItem>
